@@ -1,0 +1,21 @@
+Configuration de la board
+    - ethernet:  192.168.13.37 (static)
+    - wifi:      iit-wifi (dhcp)
+    - user:      root / pas de pass
+
+Il faut lancer le script `/home/root/gal.py`. Il écoute sur le port 2016.
+Il attend les commandes suivantes :
+    - "open\n"
+    - "close\n"
+UN seul client peut se connecter.
+
+Le relai utilisé est le 4 (bornier vert du coté de la prise ethernet).
+
+Les branchements sont :
+    - COM4 : le fil de l'électroaimant (entrée)
+    - NC4/NO4 : la sortie : il faut câbler NC4 _ou_ NO4 (l'un étant l'inverse
+      de l'autre)
+    - PWR 5V sur la Galiléo !
+    - PWR 12V sur le shield relai
+
+
